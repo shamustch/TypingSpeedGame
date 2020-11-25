@@ -15,7 +15,7 @@ prompt.config(font=("Courier", 12))
 wordlist.config(font=("Courier", 16))
 wpm = tk.Label(font=('Helvetica', 24))
 
-#Update every 500 milliseconds
+#Update every 300 milliseconds
 def updatewindow():
   now = tk.StringVar()
   wpm["textvariable"] = now
