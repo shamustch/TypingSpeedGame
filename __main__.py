@@ -1,9 +1,10 @@
 import tkinter as tk
 import time
 
-def returnWpm():
+def returnWpm(textin):
     #Calculation to measure wpm here
-    return time.strftime("%Y%m%dT%H%M%SZ", time.gmtime())
+    #wpm = characters per second / 5 * 60
+    return textin
 
 #Create Gui Window
 window = tk.Tk()
@@ -18,9 +19,9 @@ wpm = tk.Label(font=('Helvetica', 24))
 def updatewindow():
   now = tk.StringVar()
   wpm["textvariable"] = now
-  now.set(returnWpm())
+  now.set(returnWpm(textinput.get()))
   #Everything before this line gets repeated
-  window.after(500, updatewindow)
+  window.after(300, updatewindow)
 
 #Text Input
 textinput = tk.Entry(width=70)
