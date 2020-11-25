@@ -23,7 +23,7 @@ def updatewindow():
   #Everything before this line gets repeated
   window.after(300, updatewindow)
 
-#Text Input
+#Text Input Variable
 textinput = tk.Entry(width=70)
 
 #Pack labels
