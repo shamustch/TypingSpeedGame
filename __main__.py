@@ -1,9 +1,13 @@
 from timeit import default_timer as timer
+from colorama import Fore, Style
 import typing
-
+import colorama
+print(Fore.GREEN + "====================\n")
+print(Fore.CYAN + "Shamus's Typing Game\n")
+print(Fore.GREEN + "====================\n")
 words = "Wouldn't it be lovely to enjoy a week soaking up the culture?"
-print(words)
-text = input('Enter S to start\n')
+print(Fore.YELLOW +words+'\n')
+text = input(Fore.RESET+'Enter S to start\n')
 if(text.lower()=='s'):
     start = timer()
 def returnWpm(textin):
